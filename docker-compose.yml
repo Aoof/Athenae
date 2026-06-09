@@ -1,0 +1,16 @@
+services:
+  athenae:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-8032}:8032"
+    environment:
+      NODE_ENV: production
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    networks:
+      - athenae_net
+networks:
+  athenae_net:
+    driver: bridge
