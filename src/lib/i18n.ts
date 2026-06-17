@@ -1,22 +1,22 @@
 import { init, locale, addMessages } from 'svelte-i18n';
 import { get } from 'svelte/store';
-import en from './locales/en';
-import fr from './locales/fr';
-import type { TUserData } from './types/user';
+import { en } from './locales/en';
+import { fr } from './locales/fr';
+import type { UserData } from './types/user';
 
 let hasInitializedI18n = false;
 const STORAGE_KEY = 'userData';
 
-type TSupportedLocale = 'en' | 'fr';
+type SupportedLocale = 'en' | 'fr';
 
 addMessages('en', en);
 addMessages('fr', fr);
 
-function isSupportedLocale(value: unknown): value is TSupportedLocale {
+function isSupportedLocale(value: unknown): value is SupportedLocale {
     return value === 'en' || value === 'fr';
 }
 
-function readLocaleFromStorage(): TSupportedLocale | null {
+function readLocaleFromStorage(): SupportedLocale | null {
     if (typeof localStorage === 'undefined') {
         return null;
     }
@@ -32,7 +32,7 @@ function readLocaleFromStorage(): TSupportedLocale | null {
             return null;
         }
 
-        const parsedObject = parsed as TUserData;
+        const parsedObject = parsed as UserData;
         const candidateLanguage = parsedObject.preferences?.language;
         return isSupportedLocale(candidateLanguage) ? candidateLanguage : null;
     } catch {
@@ -40,7 +40,7 @@ function readLocaleFromStorage(): TSupportedLocale | null {
     }
 }
 
-function readBrowserLocale(): TSupportedLocale {
+function readBrowserLocale(): SupportedLocale {
     if (typeof navigator === 'undefined') {
         return 'en';
     }
@@ -49,7 +49,7 @@ function readBrowserLocale(): TSupportedLocale {
     return browserLocale === 'fr' ? 'fr' : 'en';
 }
 
-function resolveInitialLocale(): TSupportedLocale {
+function resolveInitialLocale(): SupportedLocale {
     return readLocaleFromStorage() ?? readBrowserLocale();
 }
 

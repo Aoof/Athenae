@@ -1,8 +1,11 @@
 <script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import "./layout.css";
+	import favicon from "$lib/assets/favicon.svg";
+    import { initI18n } from "$lib/i18n";
 
-    import * as NavMenu from "$lib/components/ui/navigation-menu/index.js";
+	import * as NavMenu from "$lib/components/ui/navigation-menu/index.js";
+
+    initI18n();
 
 	let { children } = $props();
 </script>

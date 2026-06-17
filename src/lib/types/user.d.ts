@@ -1,4 +1,4 @@
-export type TUserData = {
+export type UserData = {
     preferences: Record<string, string> | {
         language: string;
     };
