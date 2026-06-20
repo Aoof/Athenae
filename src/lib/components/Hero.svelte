@@ -2,7 +2,6 @@
 	import { _ } from 'svelte-i18n';
 	import { resolve } from '$app/paths';
 	import { locale } from '$lib/stores/locale';
-	import { scrollProgress } from '$lib/utils/animations';
 	import { onMount } from 'svelte';
 
     import Logo from '$lib/assets/athenae_logo.png';
@@ -256,7 +255,7 @@
 			class="relative mb-8 transition-all duration-1000 ease-out"
 			style="
         opacity: {mounted ? 1 : 0};
-        transform: translateY({mounted ? logoOffset * -1 + 'px' : '24px'});
+        transform: translateY({mounted ? logoOffset * 1 + 'px' : '-24px'});
         transition-delay: 150ms;
       "
 		>
@@ -277,11 +276,11 @@
         transition-delay: 300ms;
       "
 		>
-			<div class="divider-bronze-short mx-auto mb-8 opacity-60"></div>
-			<h1 class="mb-5 font-display text-display-2xl leading-[1.05] tracking-tight text-offwhite">
+			<div class="divider-bronze-short mx-auto mb-4 opacity-60"></div>
+			<h1 class="mb-2 font-display text-display-2xl leading-[1.05] tracking-tight text-offwhite">
 				<span class="block text-bronze-400 italic">{$_('home.headline')}</span>
 			</h1>
-			<p class="text-body-muted mx-auto mb-10 max-w-md text-sm leading-loose">
+			<p class="text-offwhite mx-auto mb-10 max-w-md text-sm leading-loose">
 				{$_('home.subheadline')}<br />
 			</p>
 
@@ -308,7 +307,7 @@
 
 	<!-- Scroll indicator -->
 	<div
-		class="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 transition-all duration-700"
+		class="absolute bottom-2 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 transition-all duration-700"
 		style="opacity: {mounted ? Math.max(0, 1 - scrollY * 0.008) : 0};"
 		aria-hidden="true"
 	>
