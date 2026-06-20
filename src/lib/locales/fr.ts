@@ -1,5 +1,6 @@
 export const fr = {
     "test": "Cette phrase est en français",
+    "common.language": "en",
     "nav.about": "À propos",
     "nav.programs": "Programmation",
     "nav.getInvolved": "S'impliquer",

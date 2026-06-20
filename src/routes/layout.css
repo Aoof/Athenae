@@ -235,7 +235,7 @@
     }
 
     .text-body-muted {
-        @apply font-body text-muted-blue text-sm leading-relaxed;
+        @apply font-body text-navy-950 text-sm leading-relaxed;
     }
 
     /* Bronze divider */
@@ -269,7 +269,7 @@
 
     /* Buttons */
     .btn-bronze {
-        @apply inline-flex items-center gap-2 bg-bronze-600 text-parchment font-body font-medium text-sm px-6 py-3 tracking-wide transition-all duration-300 hover:bg-bronze-500 hover:shadow-[0_0_20px_rgba(184, 115, 51, 0.3)] focus-visible:outline-2 focus-visible:outline-bronze-400;
+        @apply inline-flex items-center gap-2 bg-bronze-600 text-parchment font-body font-medium text-sm px-6 py-3 tracking-wide transition-all duration-300 hover:bg-bronze-500 focus-visible:outline-2 focus-visible:outline-bronze-400;
     }
 
     .btn-outline-bronze {
@@ -277,12 +277,12 @@
     }
 
     .btn-ghost {
-        @apply inline-flex items-center gap-2 text-muted-blue font-body text-sm tracking-wide transition-all duration-300 hover:text-bronze-400;
+        @apply inline-flex items-center gap-2 text-navy-950 font-body text-sm tracking-wide transition-all duration-300 hover:text-bronze-400;
     }
 
     /* Form elements */
     .input-field {
-        @apply w-full bg-navy-900 border border-navy-600/40 text-offwhite font-body text-sm px-4 py-3 placeholder:text-muted-blue/50 focus:outline-none focus:border-bronze-600/60 transition-colors duration-200;
+        @apply w-full bg-navy-900 border border-navy-600/40 text-offwhite font-body text-sm px-4 py-3 placeholder:text-navy-950/50 focus:outline-none focus:border-bronze-600/60 transition-colors duration-200;
     }
 
     .label-field {
@@ -291,7 +291,7 @@
 
     /* Nav link */
     .nav-link {
-        @apply font-body text-xs text-muted-blue uppercase tracking-[0.1em] transition-colors duration-200 hover:text-bronze-400 relative;
+        @apply font-body text-xs text-white uppercase tracking-widest transition-colors duration-200 hover:text-bronze-400 relative;
     }
 
     .nav-link-active {
@@ -332,6 +332,10 @@
     .reveal-delay-4 {
         transition-delay: 500ms;
     }
+
+	.hamburger-line {
+		@apply absolute h-px w-5 bg-offwhite transition-all duration-300;
+	}
 }
 
 .hero-pattern-ring {
