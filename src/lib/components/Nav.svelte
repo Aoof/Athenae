@@ -58,8 +58,8 @@
 
 <header
 	class={cn(
-		'fixed top-0 right-0 left-0 z-40 transition-all duration-500',
-		scrolled ? 'border-b border-navy-700/30 bg-navy-900/95 backdrop-blur-sm' : 'bg-transparent'
+		'fixed top-0 right-0 left-0 z-40 transition-all duration-500 border-navy-700/30',
+		scrolled ? 'border-b bg-navy-950/75 backdrop-blur-sm' : 'bg-transparent'
 	)}
 >
 	<nav

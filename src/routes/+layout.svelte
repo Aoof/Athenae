@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/athenae_logo.png';
 	import { initI18n } from '$lib/i18n';
 
 	initI18n();
