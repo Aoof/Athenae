@@ -19,16 +19,18 @@
 
 		<div class="divider-bronze-short mb-6 opacity-60"></div>
 		<p class="text-eyebrow mb-3">Athenae Initiative</p>
-		<h1 class="mb-4 font-display text-display-2xl leading-[1.05] tracking-tight text-offwhite italic">
+		<h1
+			class="mb-4 font-display text-display-2xl leading-[1.05] tracking-tight text-offwhite italic"
+		>
 			Coming Soon
 		</h1>
-		<p class="text-offwhite/85 mx-auto mb-10 max-w-xl text-sm leading-loose">
+		<p class="mx-auto mb-10 max-w-xl text-sm leading-loose text-offwhite/85">
 			We are preparing a new experience. Please check back soon for updates.
 		</p>
 
 		<div class="w-full max-w-md border border-bronze-600/30 bg-navy-900/40 px-6 py-5">
 			<p class="text-eyebrow mb-2">Contact</p>
-			<p class="text-offwhite/80 mb-2 text-sm">For inquiries, reach us at:</p>
+			<p class="mb-2 text-sm text-offwhite/80">For inquiries, reach us at:</p>
 			<a
 				href="mailto:example@athenae.ca"
 				class="font-body text-sm text-bronze-400 transition-colors hover:text-bronze-300"
