@@ -32,10 +32,10 @@
 			<p class="text-eyebrow mb-2">Contact</p>
 			<p class="mb-2 text-sm text-offwhite/80">For inquiries, reach us at:</p>
 			<a
-				href="mailto:example@athenae.ca"
+				href="mailto:athenaeinitiative@gmail.com"
 				class="font-body text-sm text-bronze-400 transition-colors hover:text-bronze-300"
 			>
-				example@athenae.ca
+				athenaeinitiative@gmail.com
 			</a>
 		</div>
 	</div>

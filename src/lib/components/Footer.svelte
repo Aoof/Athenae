@@ -90,10 +90,10 @@
 				<div class="mt-6">
 					<p class="text-eyebrow mb-2">Contact</p>
 					<a
-						href="mailto:example@athenae.ca"
+						href="mailto:athenaeinitiative@gmail.com"
 						class="font-body text-xs text-bronze-400 transition-colors hover:text-bronze-300"
 					>
-						example@athenae.ca
+						athenaeinitiative@gmail.com
 					</a>
 				</div>
 			</div>
