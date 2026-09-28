@@ -6,8 +6,6 @@
 	import { cn } from '$lib/utils/cn';
 	import { _ } from 'svelte-i18n';
 
-	import Logo from '$lib/assets/athenae_logo.png';
-
 	let menuOpen = $state(false);
 	let scrolled = $state(false);
 
@@ -73,7 +71,7 @@
 			aria-label="Athenae Initiative — Home"
 		>
 			<img
-				src={Logo}
+				src="/assets/athenae_logo.png"
 				alt="Athenae Initiative"
 				class="h-9 w-9 object-contain opacity-90 brightness-0 invert transition-opacity group-hover:opacity-100"
 			/>

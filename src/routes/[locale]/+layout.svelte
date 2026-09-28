@@ -7,8 +7,6 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	import Logo from '$lib/assets/athenae_logo.png';
-
 	$effect(() => {
 		const lp = page.params.locale;
 		if (lp && isLocale(lp)) userStore.setLanguage(lp);
@@ -28,7 +26,7 @@
 		content="Athenae Initiative — Free public events fighting anti-intellectualism. Événements publics gratuits contre l'anti-intellectualisme."
 	/>
 	<meta property="og:site_name" content="Athenae Initiative" />
-	<meta property="og:image" content={Logo} />
+	<meta property="og:image" content="/assets/athenae_logo.png" />
 </svelte:head>
 
 <Nav />

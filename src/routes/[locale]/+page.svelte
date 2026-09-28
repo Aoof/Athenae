@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Logo from '$lib/assets/athenae_logo.png';
 </script>
 
 <section
@@ -11,7 +10,7 @@
 
 	<div class="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center text-center">
 		<img
-			src={Logo}
+			src="/assets/athenae_logo.png"
 			alt="Athenae Initiative"
 			class="mb-8 h-auto w-[min(220px,52vw)] object-contain brightness-0 invert"
 			style="filter: invert(1) sepia(0.2) saturate(0.8) brightness(0.9);"
